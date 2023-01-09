@@ -1,0 +1,39 @@
+{% extends 'blog_front/base.html' %}
+{% load static %}
+
+{% block extra_header %}
+    <link rel="stylesheet" href={% static 'css/index.css' %}>
+{% endblock %}
+
+{% block content %}
+    <div class="introduction">
+        <h1>Introduction</h1>
+        <p>Thepass is an company of web development for small and big business.
+            We propose solution that are designed to your needs. </p>
+    </div>
+    <div class="services">
+        <h1>Services</h1>
+        <p>Our services are designed to help you to develop your business. We propose a wide range of services that are designed to your needs.</p>
+        <div class="web_design">
+            <h1>web design</h1>
+        </div>
+        <div class="Web_development">
+            <h1>web development</h1>
+        </div>
+        <div class="Web_hosting">
+            <h1>web hosting</h1>
+        </div>
+        <div class="Web_maintenance">
+            <h1>web maintenance</h1>
+        </div>
+        <div class="Web_marketing">
+            <h1>web marketing</h1>
+        </div>
+        <div class="Web_support">
+            <h1>web support</h1>
+        </div>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head class="header">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href={% static 'css/base.css' %}>
+    {% block extra_header %}
+    {% endblock %}
+    <title>The Pass</title>
+</head>
+
+<body>
+<div class="navbar">
+    <a href="{% url 'index' %}"><img class="logo" src="{% static 'images/logo.png' %}" alt="logo"></a>
+    <nav class="nav-items">
+        <a href="{% url 'index' %}">home</a>
+        <a href="{% url 'about' %}">about</a>
+        <a href="{% url 'blog' %}">blog</a>
+        <a href="{% url 'contact' %}">contact</a>
+    </nav>
+</div>
+<div id="block_content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+
+<footer>
+    <div class="foot">
+        <div class="home_link">
+            <a href="{% url 'index' %}">home</a>
+            <a href="{% url 'about' %}">about</a>
+            <a href="{% url 'blog' %}">blog</a>
+            <a href="{% url 'contact' %}">contact</a>
+        </div>
+        <br>
+        <div class="social">
+            <a href="#">linkedin</a>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+        </div>
+    </div>
+</footer>
+</html>

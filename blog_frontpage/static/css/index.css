@@ -1,0 +1,8 @@
+/* create tile with round edge*/
+.service {
+    border-radius: 10px;
+    width: 80vw;
+    height: 30vh;
+    background-color: #440614;
+    display: inline-block;
+}

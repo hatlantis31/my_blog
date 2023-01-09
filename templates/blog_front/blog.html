@@ -1,0 +1,29 @@
+{% extends 'blog_front/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>My Blog</h1>
+                <h2>Posts</h2>
+                <ul>
+                    {% for post in post_list %}
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">{{ post.title }}</h3>
+                                <p class="card-text">{{ post.content }}</p>
+                                <a href="{% url 'post' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Posted on {{ post.publish }} by
+                                <a href="#">{{ post.author }}</a>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

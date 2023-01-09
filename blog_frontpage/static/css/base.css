@@ -1,0 +1,81 @@
+* {
+    color: #D0DDD7;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+
+}
+
+/* add a background image */
+body {
+    background-image: url("/blog_frontpage/static/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* heading*/
+h1 {
+    color: #a5ae9e;
+}
+
+h2 {
+    color: #a5ae9e;
+}
+
+/*Navigation bar  and header */
+.logo {
+    width: 20vw;
+    height: 10vh;
+}
+
+.navbar {
+    background-color: #440614;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d50032;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items {
+    /*  put the item on the right */
+    margin-top: 1rem;
+    float: right;
+    padding: 0 1vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform: Capitalize;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+}
+
+/* footer */
+footer {
+    background-color: #440614;
+    color: #d50032;
+    font-size: 12px;
+    padding-bottom: 50px;
+    display: block;
+}
+
+.social {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+}
+
+.home_link {
+    display: inline;
+    float: left;
+    margin-top: 10px;
+}
+
+
+
+
+
+
